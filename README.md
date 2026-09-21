@@ -5,6 +5,15 @@ A bar widget for [Noctalia](https://noctalia.dev) showing Claude Code's session 
 - **Left click**: notification with a quick session/weekly summary.
 - **Right click**: opens a new Claude Code session in a terminal, running `claude --permission-mode auto` (auto-approves permission prompts — know that before you click).
 
+## Dependencies
+
+- [Noctalia](https://noctalia.dev) v5+ (`plugin_api = 3`)
+- [Claude Code](https://claude.com/claude-code), logged in (`~/.claude/projects` transcripts and `~/.claude/.credentials.json` are what the collector reads)
+- `python3` (stdlib only, no pip packages)
+- `bash`, `jq`, `mktemp`, `mv` (all standard on any Linux install)
+
+None of the above are Omarchy- or Arch-specific — see "On any other system" below.
+
 ## Install
 
 ```bash
