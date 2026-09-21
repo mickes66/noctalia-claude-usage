@@ -1,0 +1,18 @@
+# Claude Code usage indicator: a bar icon showing the same session/weekly
+# rate-limit percentages as Omarchy's own omarchy.agents widget, read from
+# the JSON records omarchy-agent-usage-update already writes.
+
+id = "mickes/claude-usage"
+name = "Claude Usage"
+version = "1.0.0"
+plugin_api = 3
+author = "mickes"
+license = "MIT"
+dependencies = []
+icon = "brand-open-source"
+description = "Claude Code usage and rate-limit indicator, backed by Omarchy's agent usage collector."
+tags = ["ai", "productivity"]
+
+[[widget]]
+id = "usage"
+entry = "usage.luau"

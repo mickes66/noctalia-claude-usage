@@ -1,0 +1,12 @@
+The two scripts in this directory (omarchy-agent-usage-claude,
+omarchy-agent-usage-update) are from the Omarchy project:
+
+    https://github.com/omacom/omarchy
+
+Copyright (c) David Heinemeier Hansson
+Licensed under the MIT License (see the parent LICENSE file).
+
+omarchy-agent-usage-update carries a small local patch from the original:
+it locates sibling omarchy-agent-usage-* collectors relative to its own
+script directory instead of requiring $OMARCHY_PATH, so the pair works
+standalone on any system, not just Omarchy.
